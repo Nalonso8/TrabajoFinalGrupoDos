@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos una Inmobiliaria en crecimiento">
+    <meta name="keywords" content="paginas web, one page, landing page">
+    <title>Desarrollo de páginas Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.5/css/svg-with-js.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo"><h1>GD</h1></div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="./propiedades.html">Propiedades</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="menu-hamburguesa">
+                <div class="icono-hamburguesa" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+        <section id="propiedades" class="propiedades">
+            <div class="ventas">
+                <h2>Ventas</h2>
+                <div class="ventas-prop">
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/8c4f9753-7b38-432d-aecd-9d8e516f133f/AUTOx860/a9f6ea6d-a16a-4f3b-ada1-4038e1e96fb3.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Ramos Mejía</figcaption>
+                        </figure>
+                        <p>$180.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/cfd8716e-dd89-4ded-a485-41b690bd745d/AUTOx860/60e24b7d-0255-4eeb-846e-ba600208f377.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Escobar</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/a4b09c01-b781-4a1b-a08e-8c09885938cb/AUTOx860/64e58290-31a4-4b26-bca9-00b4defba7c5.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Almagro</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/4edcc2ad-65df-4248-a454-141988c76a63/860x440/fc66c85b-9a59-4856-b028-9b4c6643edbb.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Ramos Mejía</figcaption>
+                        </figure>
+                        <p>$300.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/8c4f9753-7b38-432d-aecd-9d8e516f133f/AUTOx860/a9f6ea6d-a16a-4f3b-ada1-4038e1e96fb3.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Ramos Mejía</figcaption>
+                        </figure>
+                        <p>$180.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/cfd8716e-dd89-4ded-a485-41b690bd745d/AUTOx860/60e24b7d-0255-4eeb-846e-ba600208f377.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Escobar</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/a4b09c01-b781-4a1b-a08e-8c09885938cb/AUTOx860/64e58290-31a4-4b26-bca9-00b4defba7c5.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Almagro</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="https://d1acdg20u0pmxj.cloudfront.net/listings/4edcc2ad-65df-4248-a454-141988c76a63/860x440/fc66c85b-9a59-4856-b028-9b4c6643edbb.webp?" class="img-fluid" alt="propiedad-1">
+                            <figcaption>Ramos Mejía</figcaption>
+                        </figure>
+                        <p>$300.000</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="alquileres">
+                <h2>Alquileres</h2>
+                <div class="alquileres-prop">
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/90126379-b69c-4dac-b140-824a23bbbdca.webp" class="img-fluid" alt="propiedad-1">
+                        <figcaption>Recoleta</figcaption>
+                        </figure>
+                        <p>$200.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/330ab0d1-6ccb-4f01-bd31-27a2ab6c67f2.webp" class="img-fluid"   alt="propiedad-4">
+                            <figcaption>San justo</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/e970cb18-fb7a-478c-9b93-76e063f72676.webp" class="img-fluid"   alt="propiedad-3">
+                            <figcaption>Belgrano</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/3be22638-4c76-4fec-9515-f6eb81f032ac.webp" class="img-fluid"   alt="propiedad-4">
+                            <figcaption>San justo</figcaption>
+                        </figure>
+                        <p>$180.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/90126379-b69c-4dac-b140-824a23bbbdca.webp" class="img-fluid" alt="propiedad-1">
+                        <figcaption>Recoleta</figcaption>
+                        </figure>
+                        <p>$200.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/330ab0d1-6ccb-4f01-bd31-27a2ab6c67f2.webp" class="img-fluid"   alt="propiedad-4">
+                            <figcaption>San justo</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/e970cb18-fb7a-478c-9b93-76e063f72676.webp" class="img-fluid"   alt="propiedad-3">
+                            <figcaption>Belgrano</figcaption>
+                        </figure>
+                        <p>$250.000</p>
+                    </article>
+
+                    <article class="card-prop">
+                        <figure>
+                            <img src="../img/3be22638-4c76-4fec-9515-f6eb81f032ac.webp" class="img-fluid"   alt="propiedad-4">
+                            <figcaption>San justo</figcaption>
+                        </figure>
+                        <p>$180.000</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+        <!-- Pie de página -->
+    <footer id="pie">
+        <div class="pie">
+            <div class="copy">© 2024 Desarrollo web. Todos los derechos reservados.</div>
+            <div class="redes">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="../img/instagram.svg" alt="instagram">
+                </a>
+                <a href="https://facebook.com/" target="_blank">
+                    <img src="../img/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://www.whatsapp.com/" target="_blank">
+                    <img src="../img/whatsapp.svg" alt="whatsapp">
+                </a>
+            </div>
+            <div class="btn-top">
+                <a href="#logo">
+                    <img src="../img/icons8-top-50.png" alt="boton-top">
+                </a>
+            </div>     
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

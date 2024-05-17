@@ -9,7 +9,7 @@
         width: 300px;
         height: 380px;
         padding: 1rem;
-        margin: .5rem;
+        margin: .5rem 0;
 }
 
         .servicios article img{
@@ -37,3 +37,22 @@
         text-align: center;
         padding-bottom: 4rem;
     }
+
+@media (max-width: 425px) {
+
+    .servicios article{
+            height: auto;
+            padding: 1rem;
+            margin: .5rem 0;
+    }
+    
+        .servicios h3{
+            padding: 2% 0;
+        }
+    
+            .servicios-text p{
+                width: 80%;
+                font-size: 16px;
+                padding-bottom: 2rem;
+            }
+}

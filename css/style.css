@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     z-index: auto;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 body{
-    background-color: rgba(25, 113, 255, 0.423);
+    background-color: #e6e9f7;
 }
 
 /******* Comunes *******/
@@ -18,7 +22,15 @@ h1{
 
 h2{
     text-align: center;
-    padding: 2rem 0;
+    padding: 4rem 0 2rem 0;
+}
+
+a {
+    color: #3d3d3d;
+}
+
+a:hover {
+    color: #0d6efd;
 }
 
 
@@ -27,8 +39,8 @@ h2{
 /******* Inicio Cabecera *******/
 
 header {
-    background: #9edbffe6;
-    height: 70px;
+    background: #f2f2f2;
+    height: auto;
     backdrop-filter: blur(5px);
     filter: drop-shadow(4px 4px 4px);
 }
@@ -50,34 +62,29 @@ nav ul {
     margin: 1rem 0;
 }
 
-nav ul li a {
-    color: black;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 1rem .5rem;
-}
 
-.menu ul li {
-    margin-right: 10px;
-}
+        .menu ul li {
+            margin-right: 10px;
+        }
 
-.menu ul li a {
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-}
+            .menu ul li a {
+                color: #3d3d3d;
+                font-size: 18px;
+                text-decoration: none;
+                margin: 1rem .5rem;
+            }
 
-.menu-hamburguesa {
-    display: none;
-}
+                .menu ul li a:hover {
+                    color: #0d6efd;
+                    border-bottom: 1px solid #0d6efd;
+                }
 
 
-/******* Main *******/
+                    
+                    .menu-hamburguesa {
+                        display: none;
+                    }
 
-.contenedor-principal {
-    width: 80%;
-    margin: 0 auto;
-}
 
   /***** Carrusel *****/
 .carrusel{
@@ -104,7 +111,7 @@ nav ul li a {
 
     .buscador .form-select, .input-group, .btn{
         width: 18%;
-        margin: 10px;
+        margin: .8rem;
     }
 
 /****** Propiedades *******/
@@ -118,9 +125,9 @@ nav ul li a {
 }
 
     .propiedades .card-prop{
-        width: 225px;
-        height: auto;
-        margin: .8rem;
+        width: 250px;
+        height: 340px;
+        margin: .5rem;
         border: 1px solid rgb(202, 202, 202);
         border-radius: 4px;
         text-align: center;
@@ -129,18 +136,19 @@ nav ul li a {
     }
 
         .propiedades figcaption{
-            font-weight: 700;
-            font-size: 20px;
+            font-weight: 300;
+            font-size: 16px;
+            padding-top: 2rem;
         }
 
             .propiedades p{
-                font-weight: 500;
-                font-size: 16px;
+                font-size: 20px;
+                font-weight: bold;
             }
 
         .propiedades .card-prop img{
             width: 100%;
-            height: 320px;
+            height: 220px;
             object-fit: cover;
         }
 
@@ -159,36 +167,35 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80px;
-    background-color: rgb(252, 252, 252);}
+    height: 70px;
+    background-color: #f2f2f2}
 
-    .copy{
+    .pie .copy{
         width: 40%;
         padding-left: 2rem;
     }
 
-    .redes{
+    .pie .redes{
         width: 20%;
         display: flex;
         justify-content: space-around;
     }
     
-        .redes img {
-            width: 30px;
-            height: 30px;
+        .pie .redes a i{
+            font-size: 30px;
         }
 
-    .btn-top{
-        width: 40%;
-        padding-right: 2rem;
-        display: flex;
-        justify-content: end;
-    }
+            .pie .btn-top{
+                    width: 40%;
+                    padding-right: 2rem;
+                    display: flex;
+                    justify-content: end;
+            }
 
-        .btn-top img{
-            width: 35px;
-            height: 35px;
-        }
+                .pie .btn-top a i{
+                    font-size: 30px;
+                }
+
 
 
 
@@ -224,28 +231,25 @@ nav {
             padding-left: 5%;
         }
 
-            .menu ul li a{
-                color: rgb(9, 9, 9);
-                line-height: 30px;
-
+            .menu ul li{
+               text-align: center;
             }
+
+                .menu ul li a{
+                    color: rgb(9, 9, 9);
+                    line-height: 40px;
+                }
 
                 .menu-hamburguesa {
                      display: block;
                 }
 
-                    .icono-hamburguesa {
-                        display: block;
-                        font-size: 24px;
-                        cursor: pointer;
-                        margin-right: 10px;
-                    }
-
-/******* Main *******/
-.contenedor-principal {
-        width: 100%;
-}
-/******* Fin de Main *******/
+                        .icono-hamburguesa {
+                            display: block;
+                            font-size: 30px;
+                            text-align: center;
+                            cursor: pointer;
+                        }
 
 /******* Carrusel *******/
 .carrusel{
@@ -270,22 +274,10 @@ nav {
 
 .propiedades .card-prop{
     margin: .5rem;
+    width: 80%;
 }
 
 /****** Fin de Propiedades *******/
-
-
-/****** Formulario de Contacto *******/
-.contacto {
-    width: 90%;
-    padding: 20px 0;
-}
-
-    .contacto .btn{
-        margin: 5px 0;
-        padding: 5px 10px;
-    }
-/****** Fin de Contacto *******/
 
 /******* Footer *******/
 
@@ -293,19 +285,136 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: auto;
+    height: auto;}
 
-    .copy{
+    .pie .copy{
         display: none;
     }
 
-    .redes{
-        width: 80%;
-        padding: 1rem 0;
-    }
+        .pie .redes{
+            width: 80%;
+            padding: 1rem 0;
+        }
 
-    .btn-top{
-        padding-right: 0;
-        justify-content: center;
+            .pie .btn-top {
+                padding-right: 0;
+                justify-content: center;
+            }
+}
+
+
+
+
+@media (min-width: 425px) and (max-width: 720px) {
+
+    nav {
+        align-items: flex-start;
     }
-}}
+    
+    .menu {
+        display: none;
+    }
+    
+        .menu.active {
+            display: block;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background: transparent;
+            background-color: rgba(0, 0, 0, 0.566);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+        }
+    
+            .menu ul {
+                flex-direction: column;
+                list-style: none;
+                padding-left: 5%;
+            }
+    
+                .menu ul li{
+                   text-align: center;
+                }
+    
+                    .menu ul li a{
+                        color: rgb(9, 9, 9);
+                        line-height: 40px;
+                    }
+    
+                    .menu-hamburguesa {
+                         display: block;
+                    }
+    
+                            .icono-hamburguesa {
+                                display: block;
+                                font-size: 30px;
+                                text-align: center;
+                                cursor: pointer;
+                            }
+    
+    /******* Carrusel *******/
+    .carrusel{
+        height: 50vh;
+        
+        }
+            .carrusel img {
+                height: 50vh;
+            }
+    
+    /******* Fin de Carrusel *******/
+    
+    /******* Buscador *******/
+    
+    .buscador .form-select, .input-group, .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+    /******* Fin de Buscador *******/
+    
+    /****** Propiedades *******/
+    
+    .propiedades .card-prop{
+        margin: .5rem;
+        width: 80%;
+    }
+    
+    /****** Fin de Propiedades *******/
+    
+    
+    /****** Formulario de Contacto *******/
+    .contacto {
+        width: 90%;
+        padding: 20px 0;
+    }
+    
+        .contacto .btn{
+            margin: 5px 0;
+            padding: 5px 10px;
+        }
+    /****** Fin de Contacto *******/
+    
+    /******* Footer *******/
+    
+    .pie {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;}
+    
+        .pie .copy{
+            display: none;
+        }
+    
+            .pie .redes{
+                width: 80%;
+                padding: 1rem 0;
+            }
+    
+                .pie .btn-top {
+                    padding-right: 0;
+                    justify-content: center;
+                }
+    }
+    

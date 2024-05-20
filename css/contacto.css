@@ -1,80 +1,98 @@
-/****** Formulario de Contacto *******/
-
-.contacto .btn{
-        margin: 5px 0;
-        padding: 5px 10px;
-        }
-    
-.contacto .formulario{
+.formulario {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    padding: 2rem 0;
 }
 
-    .contacto form {
-        width: 40%;
-        filter: drop-shadow(4px 4px 4px);
-    }
+h2 {
+    padding: 2rem 0 0 0;
+}
 
-        .contacto .btn{
-            margin: 5px 0;
-            padding: 5px 10px;
-            width: 120px;
-        }
+form {
+    width: 40%;
+}
 
-            .contacto .map iframe { 
-                border-radius: 4px;
-                filter: drop-shadow(4px 4px 4px);
-                margin: 2rem 0;
-            }
+.map {
+    width: 50%;
+    height: 350px;
+    margin: 4rem 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #f7f5f5;
+    filter: drop-shadow(4px 4px 4px #3d3d3d);
+}
+
+.formulario input[type="file"] {
+    width: 100%;
+}
+
+.formulario .btn {
+    width: 40%;
+    margin: 0;
+}
 
 @media (max-width: 425px) {
-
-.formulario{
-    flex-direction: column;
-}
-
-    .contacto form {
-        width: 90%;
-        padding: 2rem 0;
+    h2 {
+        padding: 2rem 0 0 0;
     }
 
-        .contacto .btn{
-            margin: 2px 0;
-            padding: 5px 0px;
-            width: 120px;
-        }
+    .contacto {
+        width: 100%;
+        padding: 20px 0;
+    }
 
-            .contacto .map iframe { 
-                width: 90%;
-                height: 250px;
-                display: block;
-                margin: 0 auto;
-            }                          
-}
-
-@media (min-width: 425px) and (max-width: 720px) {
-    
-.formulario{
+    .formulario {
         flex-direction: column;
     }
 
-        .contacto form {
+    .contacto form {
+        width: 90%;
+    }
+
+    .contacto .map {
+        width: 90%;
+        margin: 2rem 0 0 0;
+    }
+
+    .contacto form .btn {
+        width: 30%;
+    }
+
+    .formulario input[type="file"] {
+        width: 90%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    h2 {
+        padding: 2rem 0 0 0;
+    }
+
+    .contacto {
         width: 100%;
+        padding: 10px 0;
+    }
+
+    .formulario {
+        flex-direction: column;
         padding: 0;
-        }
-    
-            .contacto .btn{
-                margin: 2px 0;
-                padding: 5px 0px;
-                width: 120px;
-            }
-    
-                .contacto .map iframe { 
-                    width: 100%;
-                    height: 250px;
-                    display: block;
-                    margin: 2rem auto;
-                }                          
+    }
+
+    .contacto form {
+        width: 90%;
+    }
+
+    .contacto .map {
+        width: 90%;
+        margin: 2rem 0;
+    }
+
+    .contacto form .btn {
+        width: 30%;
+    }
 }

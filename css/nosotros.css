@@ -30,14 +30,14 @@
 /******** Media Queryes ********/
 
 @media (max-width: 425px) {
-    .nosotros{
+.nosotros{
         flex-direction: column;
         padding: 2rem 0;
     }
     
     .nosotros-descripcion{
         width: 100%;
-        padding: 0;
+        padding: 1.5rem;
         font-size: 14px;
     }
     
@@ -48,4 +48,26 @@
     .nosotros-img img{
         height: 250px;
     }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+    
+.nosotros{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    
+    .nosotros-descripcion{
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 14px;
+    }
+    
+        .nosotros-img{
+            width: 100%;
+        }
+    
+            .nosotros-img img{
+                height: 250px;
+            }
 }
